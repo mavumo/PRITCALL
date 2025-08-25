@@ -1,15 +1,16 @@
 {
-  "name": "nodejs",
+  "name": "pritpal-voice-agent",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AI receptionist for The Law Offices of Pritpal Singh",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@types/node": "^22.13.11"
+    "@fastify/websocket": "^10.0.0",
+    "fastify": "^4.28.2",
+    "openai": "^4.25.1",
+    "twilio": "^4.11.0",
+    "node-fetch": "^2.6.7"
   }
 }
